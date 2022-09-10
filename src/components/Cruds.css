@@ -1,0 +1,76 @@
+.app-container {
+  min-height: 100vh;
+}
+
+input {
+  height: 20px;
+  padding: 20px 15px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+
+input::placeholder {
+  transition: opacity 0.3s ease;
+}
+
+input:focus::placeholder {
+  opacity: 0;
+}
+
+.price,
+.searchby {
+  justify-content: space-between;
+}
+
+.total {
+  background-color: #f44336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.results h2 {
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+}
+
+.result h3 {
+  text-align: center;
+  color: #fff;
+}
+
+/* Start Media Queries */
+@media (min-width: 415px) and (max-width: 899.99px) {
+  .app-container > div {
+    width: 98% !important;
+  }
+
+  .result h3 {
+    font-size: 15px;
+    padding: 0;
+  }
+
+  .results h2 {
+    font-size: 11px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1300px) {
+  .app-container > div {
+    width: 90% !important;
+  }
+
+  .result h3 {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .results h2 {
+    font-size: 16px;
+  }
+}
